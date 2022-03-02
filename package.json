@@ -7,12 +7,14 @@
     "start": "tsc-node src/index.ts",
     "build": "tsc",
     "dev": "nodemon",
-    "roles:seed": "ts-node src/seeder/role.seeder.ts"
+    "roles:seed": "ts-node src/seeder/role.seeder.ts",
+    "products:seed": "ts-node src/seeder/product.seeder.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@faker-js/faker": "^6.0.0-alpha.7",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
